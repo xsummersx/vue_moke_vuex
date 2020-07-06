@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: "login",
+  name: "DemoLogin",
   data () {
     return {
 

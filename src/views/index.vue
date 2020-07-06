@@ -17,7 +17,7 @@
 </template>
 <script>
 export default {
-  name: 'index',
+  name: 'DemoIndex',
   data () {
     return {
 
