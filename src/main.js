@@ -7,6 +7,10 @@ import VueAxios from 'vue-axios'
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, Axios)
+Vue.prototype.$store = store
+//全局导航定位
+
+
 new Vue({
   router,
   store,

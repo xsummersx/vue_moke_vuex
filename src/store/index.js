@@ -1,19 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import state from './state.js'
+import mutation from './mutation.js'
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-    count:0
-  },
-  mutations: {
-    add(state){
-      state.count++;
-    }
-  },
-  actions: {
-  },
-  modules: {
-  }
+new Vuex.Store({
+  state,
+  mutation
 })
