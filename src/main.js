@@ -10,7 +10,7 @@ Vue.use(VueAxios, Axios)
 Vue.prototype.$store = store
 //全局导航定位
 router.beforeEach((to,from,next)=>{
-if(store.state.userInfo || to.path === '/login'){
+if(store.state.userName || to.path === '/login'){
   next()
 }else{
   next({

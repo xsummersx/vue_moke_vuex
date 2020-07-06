@@ -12,7 +12,6 @@
       </li>
     </ul>
     <button>分享课程</button>
-    {{this.$store.state.userInfo}}
   </div>
 </template>
 <script>
