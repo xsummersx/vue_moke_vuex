@@ -1,3 +1,14 @@
-{
-  "id": "12"
-}
+[
+  {
+    "vipState": 0,
+    "vipLevel": 0
+  },
+  {
+    "vipState": 1,
+    "vipLevel": 0
+  },
+  {
+    "vipState": 2,
+    "vipLevel": 0
+  }
+]
