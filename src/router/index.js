@@ -22,6 +22,11 @@ Vue.use(VueRouter)
     path: '/userInfo',
     name: 'userInfo',
     component: () => import('../views/userInfo.vue')
+  },
+  {
+    path: '/cors',
+    name: 'cors',
+    component: () => import('../views/cors.vue')
   }
 ]
 

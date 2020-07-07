@@ -30,13 +30,13 @@ export default {
         user: this.formInfo.userName
       });
       this.$store.commit("setMemberInfo", {
-        userStatus: 1,
+        userStatus: 0,
         vipLevel: 0
       })
       this.$router.push({
         path: '/'
       })
-    }
+    },
   }
 }
 </script>
