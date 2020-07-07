@@ -8,14 +8,16 @@
   </div>
 </template>
 <script>
-import { getters } from 'vuex'
+import { mapGetters } from 'vuex'
 export default {
   name: 'about',
   mounted () {
     this.init()
   },
   computed: {
-    ...getters(['vipName'])
+    ...mapGetters({
+      vipNameShow: 'vipName'
+    })
   },
   methods: {
     init () {
@@ -25,7 +27,9 @@ export default {
       })
     },
     buyVipPage () {
-
+      this.$router.push({
+        path: '/viplist'
+      })
     }
   }
 }
