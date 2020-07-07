@@ -15,9 +15,7 @@ export default {
     this.init()
   },
   computed: {
-    ...getters({
-      vipNameShow: 'vipName'
-    })
+    ...getters(['vipName'])
   },
   methods: {
     init () {
