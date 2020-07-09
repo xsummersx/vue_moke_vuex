@@ -22,9 +22,9 @@ router.beforeEach((to,from,next)=>{
 });
 
 Axios.interceptors.request.use(config => {
-  // if (localStorage.getItem('token')) {
-  //   config.headers.token = localStorage.getItem('token');//请求头部加token验证
-  // }
+  if (localStorage.getItem('token')) {
+    config.headers.token = localStorage.getItem('token');//请求头部加token验证
+  }
   console.log(config)
   return config
 }, error => {

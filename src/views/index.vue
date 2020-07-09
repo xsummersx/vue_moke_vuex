@@ -19,10 +19,9 @@ export default {
   },
   methods: {
     init () {
-      this.axios.get('http://aitt.lancooedu.com:8089/znhTJXX/api/ZNBK/W_ZNBK_GetPaperSet?Key=zRAzMTIwMQ==&UserID=G031201&GlobalGrade=K10&CourseClassID=8B834901-9C44-47C9-9449-3A16F13B5FB2&SchoolID=S4-1875774489-4655&SubjectID=C&Layer=0&isLock=false').then((res) => {
+      this.axios.get('http://172.16.41.235:20702/api/KSFX/W_GetAreaAndSectionList').then((res) => {
         console.log(res.data);
       })
-
     }
   }
 }
